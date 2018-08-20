@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LinqSpecs</name>
+    </assembly>
+    <members>
+        <member name="T:LinqSpecs.AdHocSpecification`1">
+            <summary>
+            Allows to write a <see cref="T:LinqSpecs.Specification`1"/> without writing a class.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.AdHocSpecification`1.#ctor(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Creates a custom ad-hoc <see cref="T:LinqSpecs.Specification`1"/> from the given predicate expression.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.AdHocSpecification`1.ToExpression">
+            <summary>
+            Returns an expression that defines this query.
+            </summary>
+        </member>
+        <member name="T:LinqSpecs.AndSpecification`1">
+            <summary>
+            Combines two specifications by using logical AND operation.
+            </summary>
+        </member>
+        <member name="T:LinqSpecs.NotSpecification`1">
+            <summary>
+            Negates a source specification.
+            </summary>
+        </member>
+        <member name="T:LinqSpecs.OrSpecification`1">
+            <summary>
+            Combines two specifications by using logical OR operation.
+            </summary>
+        </member>
+        <member name="T:LinqSpecs.IExpressionSerializer">
+            <summary>Serializes and deserializes an instance of an expression.</summary>
+        </member>
+        <member name="M:LinqSpecs.IExpressionSerializer.Serialize(System.Linq.Expressions.Expression)">
+            <summary>Serializes a specified expression to a byte array.</summary>
+        </member>
+        <member name="M:LinqSpecs.IExpressionSerializer.Deserialize(System.Byte[])">
+            <summary>Deserializes an expression from a specified byte array.</summary>
+        </member>
+        <member name="T:LinqSpecs.IExpressionSerializerFactory">
+            <summary>Creates instances of expression serializers.</summary>
+        </member>
+        <member name="M:LinqSpecs.IExpressionSerializerFactory.CreateSerializer">
+            <summary>Creates instances of expression serializers.</summary>
+        </member>
+        <member name="T:LinqSpecs.SerializationSettings">
+            <summary>Common serialization settings.</summary>
+        </member>
+        <member name="P:LinqSpecs.SerializationSettings.ExpressionSerializerFactory">
+            <summary>An expression serializer factory.</summary>
+        </member>
+        <member name="T:LinqSpecs.FalseSpecification`1">
+            <summary>
+            Specification which is not satisfied by any object.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.FalseSpecification`1.ToExpression">
+            <summary>
+            Returns an expression that defines this query.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.FalseSpecification`1.Equals(System.Object)">
+            <summary>
+            Determines whether the specified object is equal to the current object.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.FalseSpecification`1.GetHashCode">
+            <summary>
+            Returns a hash code for the current object.
+            </summary>
+        </member>
+        <member name="T:LinqSpecs.Specification`1">
+            <summary>
+            Base class for query specifications that can be combined
+            using logical AND, OR and NOT operators.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.Specification`1.ToExpression">
+            <summary>
+            Returns an expression that defines this query.
+            </summary>
+            <remarks>
+            Typically calling this method is not needed as the query
+            specification can be converted implicitly to an expression
+            by just assigning it or passing it as such to another method.
+            </remarks>
+        </member>
+        <member name="M:LinqSpecs.Specification`1.ToString">
+            <summary>
+            Returns a string that represents the current specification.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.Specification`1.op_Implicit(LinqSpecs.Specification{`0})~System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}">
+            <summary>
+            Performs an implicit conversion from <see cref="T:LinqSpecs.Specification`1"/>
+            to a LINQ expression.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.Specification`1.op_False(LinqSpecs.Specification{`0})">
+            <summary>
+            Override operator false for supporting &amp;&amp; and || operations
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.Specification`1.op_True(LinqSpecs.Specification{`0})">
+            <summary>
+            Override operator true for supporting &amp;&amp; and || operations
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.Specification`1.op_BitwiseAnd(LinqSpecs.Specification{`0},LinqSpecs.Specification{`0})">
+            <summary>
+            Allows to combine two query specifications using a logical AND operation.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.Specification`1.op_BitwiseOr(LinqSpecs.Specification{`0},LinqSpecs.Specification{`0})">
+            <summary>
+            Allows to combine two query specifications using a logical OR operation.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.Specification`1.op_LogicalNot(LinqSpecs.Specification{`0})">
+            <summary>
+            Negates the given specification.
+            </summary>
+        </member>
+        <member name="T:LinqSpecs.TrueSpecification`1">
+            <summary>
+            Specification which is satisfied by any object.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.TrueSpecification`1.ToExpression">
+            <summary>
+            Returns an expression that defines this query.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.TrueSpecification`1.Equals(System.Object)">
+            <summary>
+            Determines whether the specified object is equal to the current object.
+            </summary>
+        </member>
+        <member name="M:LinqSpecs.TrueSpecification`1.GetHashCode">
+            <summary>
+            Returns a hash code for the current object.
+            </summary>
+        </member>
+    </members>
+</doc>

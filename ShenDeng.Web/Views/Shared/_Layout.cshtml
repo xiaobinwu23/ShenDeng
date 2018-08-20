@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title - 神灯的商店</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/demo.css" />
+    <link rel="stylesheet" href="~/Content/js/vendor/jgrowl/css/jquery.jgrowl.min.css">
+    <!--必要样式-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/component.css" />
+    <!--[if IE]>
+    <script src="~/Content/js/html5.js"></script>
+    <![endif]-->
+    <style>
+        input::-webkit-input-placeholder {
+            color: rgba(0, 0, 0, 0.726);
+        }
+
+        input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: rgba(0, 0, 0, 0.726);
+        }
+
+        input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: rgba(0, 0, 0, 0.726);
+        }
+
+        input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: rgba(0, 0, 0, 0.726);
+        }
+    </style>
+</head>
+<body>
+<div class="container demo-1">
+    <div class="content">
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <div class="logo_box">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/js/TweenLite.min.js"></script>
+<script src="~/Content/js/EasePack.min.js"></script>
+<script src="~/Content/js/jquery.js"></script>
+<script src="~/Content/js/rAF.js"></script>
+<script src="~/Content/js/demo-1.js"></script>
+<script src="~/Content/js/vendor/jgrowl/jquery.jgrowl.min.js"></script>
+<script src="~/Content/js/Longin.js"></script>
+<div style="text-align: center;">
+</div>
+</body>
+</html>
