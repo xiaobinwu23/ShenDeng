@@ -20,3 +20,14 @@ E:\LocalDevelopBrank\shendeng\ShenDeng\obj\Debug\ShenDeng.csproj.CoreCompileInpu
 E:\LocalDevelopBrank\shendeng\ShenDeng\obj\Debug\ShenDeng.csproj.CopyComplete
 E:\LocalDevelopBrank\shendeng\ShenDeng\obj\Debug\ShenDeng.dll
 E:\LocalDevelopBrank\shendeng\ShenDeng\obj\Debug\ShenDeng.pdb
+E:\GitHub\Test\ShenDeng\bin\Debug\ShenDeng.dll
+E:\GitHub\Test\ShenDeng\bin\Debug\ShenDeng.pdb
+E:\GitHub\Test\ShenDeng\bin\Debug\LinqSpecs.dll
+E:\GitHub\Test\ShenDeng\bin\Debug\Machine.Specifications.dll
+E:\GitHub\Test\ShenDeng\bin\Debug\Machine.Specifications.Should.dll
+E:\GitHub\Test\ShenDeng\bin\Debug\LinqSpecs.xml
+E:\GitHub\Test\ShenDeng\obj\Debug\ShenDeng.csprojResolveAssemblyReference.cache
+E:\GitHub\Test\ShenDeng\obj\Debug\ShenDeng.csproj.CoreCompileInputs.cache
+E:\GitHub\Test\ShenDeng\obj\Debug\ShenDeng.csproj.CopyComplete
+E:\GitHub\Test\ShenDeng\obj\Debug\ShenDeng.dll
+E:\GitHub\Test\ShenDeng\obj\Debug\ShenDeng.pdb
