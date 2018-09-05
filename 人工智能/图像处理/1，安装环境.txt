@@ -1,0 +1,6 @@
+<ImageRecog>:
+    学习内容：
+	     1，安装库：PIL(Python2), Pillow(Python3), pytesseract。
+		 2，安装识别引擎：tesseract-ocr
+		 3，配置环境变量，修改源文件。
+		 4，下载中文识别文件。
